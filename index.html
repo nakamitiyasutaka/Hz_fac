@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hz-factory</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+            const smoothScrollTrigger = document.querySelectorAll('a[href^="#"]');
+        for (let i = 0; i < smoothScrollTrigger.length; i++){
+            smoothScrollTrigger[i].addEventListener('click', (e) => {
+            e.preventDefault();
+            let href = smoothScrollTrigger[i].getAttribute('href');
+            let targetElement = document.getElementById(href.replace('#', ''));
+            const rect = targetElement.getBoundingClientRect().top;
+            const offset = window.pageYOffset;
+            const gap = 60;
+            const target = rect + offset - gap;
+            window.scrollTo({
+                top: target,
+                behavior: 'smooth',
+            });
+            });
+        }
+    </script>
+        <style>
+        .footer_img_style{
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div class="container-fluid">
+        <div class = "header_style">
+            <div class="row p-0 m-0">
+                <div class="col-lg-4 top_icon" ><a href=""><img class="img-fluid img-size" src="item1.png" alt=""></a></div>
+                <div class=col-lg-8>
+                    <ul>
+                        <li><a href="#menu1">TOP</a></li>
+                        <li><a href="#menu2">NEWS</a></li>
+                        <li><a href="#menu3">SERVICE</a></li>
+                        <li><a href="#menu4">COMPANY</a></li>
+                        <li> |</li>
+                        <li><a href="Hz-contact.html"><button>CONTACT</button></a></li>
+                    </ul>
+                </div>
+            </div>
+            <section id="menu1">
+                <div class="img01">
+                        <img class="img-fluid p-0 m-0" src="item30.png" alt="">
+                        <h1><img clsss="img-fluid" src="item4.png" width="1100" alt=""></h1>
+                </div>
+            </section>
+        </div>
+        <section id="menu2">
+            <div class="topic-icon">
+                <img class="rounded mx-auto d-block m-4 img-size02" src="item5.png" alt="NEWアイコン"><br>
+            </div>
+                <div class="row news_row_padding">
+                    <div class="col-3">
+                        <p class="news_row">2020.11</p>
+                    </div>
+                    <div class="col-7">
+                        <p class="news_row">自社ホームページサイトをオープンしました。</p>
+                    </div>
+                    <div class="col-2 p-0 m-0">
+                        <img class="img-fluid " src="item7.png" alt="moreボタン">
+                    </div>
+                    <hr color="#1c1c1c" width="2000">
+                    <div class="col-3">
+                        <p class="news_row">2018.03</p>
+                    </div>
+                    <div class="col-7">
+                        <p class="news_row">株式会社エイチズファイトリー 起業</p>
+                    </div>
+                    <div class="col-2 p-0 m-0">
+                        <img class="img-fluid " src="item7.png" alt="moreボタン">
+                    </div>
+                    <hr color="#1c1c1c" width="2000">
+
+                </div>
+            <div class="topic-icon">
+                <img class="rounded mx-auto d-block img-size" src="item8.png" alt="view listボタン">
+            </div>
+        </section>
+        <section id="menu3">
+                <img class="service-img01 img-fluid" src="item31.png" alt="service画像">
+        </section>
+        <section id="menu4">
+            <div class="topic-icon">
+                <img class="rounded mx-auto d-block m-4 img-size02" src="item15.png" alt="companyアイコン">
+            </div>
+            <div class="a row mx-auto" style="width: 80%;">
+                <div class="col-xl-6 header_style">
+                    <dl class="profile-area">
+                    <div class="row profile">
+                        <div class="col-3">
+                            <p>会社名</p>
+                        </div>
+                        <div class="col-9">
+                            <p>＊＊＊＊＊＊＊＊＊</p>
+                        </div>
+                    </div>
+                    <div class="row profile">
+                        <div class="col-3">
+                            <p>代表取締役</p>
+                        </div>
+                        <div class="col-9">
+                            <p>＊＊＊＊＊＊＊＊＊</p>
+                        </div>
+                    </div>
+                    <div class="row profile">
+                        <div class="col-3">
+                            <p>所在地</p>
+                        </div>
+                        <div class="col-9">
+                            <p><span class="small">〒000-000</span><br>＊＊＊＊＊＊＊＊<br>＊＊＊＊＊＊＊＊＊＊</p>
+                        </div>
+                    </div>
+                    </dl>
+                </div>
+                <div class="col-xl-6 GoogleMap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.6365177750276!2d139.7060425510537!3d35.735156880084524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d5f6d0d1da1%3A0x3705080f7ee0f758!2z44Ko44Og44K344O844Kq44OV44Kj44K55rGg6KKL6KW_5Y-j!5e0!3m2!1sja!2sjp!4v1607497251118!5m2!1sja!2sjp" width="80%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+            </div>
+            <div class="header_style py-4">
+                <div class="footer-icon">
+                    <img class="rounded mx-auto d-block p-0 m-0 footet-img01" src="item27.png" alt="hz-factoryマーク"><br>
+                </div>
+                <a href="Hz-contact.html"><img class="mx-auto d-block footer-button footet-img02" src="item22.png" alt="お問い合わせ画像"></a>
+            </div>
+            <img class="mx-auto d-block footer-icon2 img-size" src="item24.png" alt="footer画像">
+        </section>
+    </div>
+</section>
+</body>
+</html>
